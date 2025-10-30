@@ -23,10 +23,12 @@ while s < 101:
     else:
         s+=1  # Задание 3
 
-from math import *
+fact = int(input('Введите число: '))
+ans = 1
+for i in range (1, fact+1):
+    ans = ans * i
+print(ans)
 
-number = int(input("Введите число: "))
-print(factorial(number))   #Задание 4
 
 Z = 20
 while Z != -1:
