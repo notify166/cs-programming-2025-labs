@@ -15,40 +15,45 @@ else:
 
 
 
-n = 1
-while n < 101:
-    if n%3==0:
-        print(n)
-        n+=1
+s = 1
+while s < 101:
+    if s%3==0:
+        print(s)
+        s+=1
     else:
-        n+=1  # Задание 3
+        s+=1  # Задание 3
 
 from math import *
 
 number = int(input("Введите число: "))
-print(factorial(number))   Задание 4
+print(factorial(number))   #Задание 4
 
-a = 20
-while a != -1:
-   print(a)
-    a = a-1 # Задание 5
+Z = 20
+while Z != -1:
+   print(Z)
+   Z = Z-1 # Задание 5
 
 number1 = int(input("Введите число:"))
 a = 0
 b = 1
 c = 0
+print(a)
+print(b)
 while c<number1:
     c = a + b
-   print(c)
-    a = b
-    b = c  # Задание 6
+    if c > number1:
+        break
+    else:
+        a = b
+        b = c
+        print(c)  # Задание 6
 
 word = input('Введите слово: ')
 answer = []
 f = 1
 for letter in word:
-    mas.append(letter)
-    mas.append(str(f))
+    answer.append(letter)
+    answer.append(str(f))
     f += 1
 print(*answer, sep='') #Задание 7
 
