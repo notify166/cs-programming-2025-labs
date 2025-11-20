@@ -1,32 +1,3 @@
-from types import ModuleType
-
-
-temp = int(input('Введите температуру: '))
-if temp >= 20:
-    print('Кондиционер выключен')
-else:
-    print('Кондиционер включен') # Задание 1
-
-
-month = int(input('Введите номер месяца: '))
-if month == 1 or month == 2 or month == 12:
-    print('Сейчас зима')     
-elif month == 3 or month == 4 or month == 5:
-    print('Сейчас весна')     
-elif month == 6 or month == 7 or month == 8:
-    print('Сейчас лето')     
-elif month == 9 or month == 10 or month == 11:
-    print('Сейчас осень')                          #Задание 2
-
-
-
-#dogage = int(input('Введите возраст собаки: '))
-#if dogage > 22:
-#    print('Ошибка: возраст должен быть не больше 22')
-#    if dogage < 1:
-#        print('Ошибка: возраст должен быть не меньше 1')
-#
-=======
 temp = int(input('Введите текущую температуру в комнате: '))
 if temp > 19:
     print('Кондиционер выключен')
@@ -114,6 +85,10 @@ else:
 # Задание 6
 
 
+
+tt = input('Введите три числа: ')
+
+
 cost = float(input('Введите сумму вашей покупки: '))
 if cost < 1000:
     print(f'Итоговая сумма вашей покупки {cost}')
@@ -126,6 +101,17 @@ elif 10000 > cost >= 5000:
 elif cost >= 10000:
     cost = (cost / 100) * 85
     print(f'Итоговая сумма вашей покупки {cost}')
+
+
+#Задание 7:
+n = input('Введите 3 числа через пробел: ')
+n1, n2, n3 = n.split(' ')
+if n1 < n2 and n1 < n3:
+    print(f'Hаименьшее число: {n1}')
+elif n2 < n1 and n2 < n3:
+    print(f'Hаименьшее число: {n2}')
+else:
+    print(f'Hаименьшее число: {n3}')
 
 
 # Задание 8
@@ -144,14 +130,6 @@ else:
     print('Неккоректный час')
 
 # Задание 9
-
-
-
-
-
-
-
-
 def prime(n):
     if n <= 1:
         return False
