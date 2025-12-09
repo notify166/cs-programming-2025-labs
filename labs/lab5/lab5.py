@@ -9,4 +9,4 @@ if target in numbers:
     numbers[index] = replacement_number
     print(f"Обновленный список: {numbers}")
 else:
-    print(f"Число {target_number} не найдено в списке.")
+    print(f"Число {target} не найдено в списке.")
