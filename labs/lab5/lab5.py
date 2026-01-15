@@ -23,9 +23,7 @@ print(sq)
 
 # Задание 3
 numbrs = [4, 42, 16, 11, 22, 14]
-maxx = max(numbrs)
-lg = len(numbrs)
-print(maxx/lg)
+print(max(numbers)/len(numbers))
 
 # Задание 4
 
